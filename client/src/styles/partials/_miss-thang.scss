@@ -1,0 +1,191 @@
+.prof-header {
+  padding: 1.25rem 1rem;
+  background-image: url("../assets/images/missthang-hero-m.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 1.875rem 0.625rem;
+  width: 100%;
+  height: 50vw;
+  @include flex-column-nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__img {
+    width: 3.75rem;
+  }
+  &__container {
+    // background-color: $hover;
+    @include flex-row-nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &--title {
+      @include mobile-header;
+      color: $white;
+      align-self: flex-end;
+    }
+    &--img {
+      height: 3.125rem;
+      width: 3.125rem;
+      align-self: flex-end;
+    }
+  }
+}
+
+.main {
+  margin: 0 1rem;
+  &__rating {
+    @include flex-row-nowrap;
+    margin: 1.25rem 0 1.875rem;
+    &--title {
+      @include mobile-subheader;
+    }
+    &--stars {
+      margin-left: 0.3125rem;
+      .size {
+        height: 0.9375rem;
+      }
+    }
+  }
+  &__content {
+    &--title {
+      @include mobile-subheader;
+      margin-bottom: 0.625rem;
+    }
+    &--para {
+      @include mobile-paragraph;
+    }
+  }
+}
+
+.quote {
+  margin: 0 1rem;
+  text-align: center;
+  padding: 2.5rem 1.5625rem;
+  &__text {
+    @include mobile-header;
+    font-style: italic;
+    color: $green;
+  }
+}
+
+.heading {
+  margin: 0 1rem;
+  &__txt {
+    margin-bottom: 1.25rem;
+  }
+  .holder {
+    @include flex-row-wrap;
+    justify-content: space-between;
+    &__card {
+      margin: 0.3125rem;
+      border: 0.0625rem solid $gray;
+      width: 7.5rem;
+      height: 18.75rem;
+    }
+  }
+}
+
+@include medium {
+  .prof-header {
+    margin: unset;
+    padding: 0 1.5rem;
+    &__img {
+      width: 6.25rem;
+      height: 100px;
+    }
+    &__container {
+      position: relative;
+      &--title {
+        @include desk-tablet-header;
+        margin-bottom: 1.25rem;
+      }
+      &--img {
+        height: 10rem;
+        width: 10rem;
+        position: absolute;
+        bottom: -5rem;
+        right: 1.5rem;
+      }
+    }
+  }
+  .main {
+    &__rating {
+      margin: 2.5rem 1.5rem 3.75rem;
+      &--title {
+        @include desk-tablet-subheader;
+      }
+      &--stars {
+        margin-left: 0.625rem;
+        .size {
+          height: 1.25rem;
+        }
+      }
+    }
+    &__content {
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+      &--title {
+        @include desk-tablet-subheader;
+        margin-bottom: 1.25rem;
+      }
+      &--para {
+        @include desk-tablet-para-comment;
+        width: 70vw;
+      }
+    }
+  }
+  .quote {
+    margin: 0 1.5rem;
+    text-align: center;
+    padding: 2.5rem 1.5625rem;
+    &__text {
+      @include desk-tablet-header-smaller;
+    }
+  }
+}
+
+@include huge {
+  .prof-header {
+    &__container {
+      &--title {
+        margin-left: 11.25rem;
+        position: relative;
+      }
+      &--img {
+        position: absolute;
+        right: 11.25rem;
+      }
+    }
+  }
+  .main {
+    &__rating {
+      margin: 2.5rem 11.25rem 3.75rem;
+      &--title {
+        @include desk-tablet-subheader;
+      }
+      &--stars {
+        margin-left: 0.625rem;
+      }
+    }
+    &__content {
+      margin-right: 11.25rem;
+      margin-left: 11.25rem;
+      &--title {
+        // @include desk-tablet-subheader;
+        margin-bottom: 1.25rem;
+      }
+      //   &--para {
+      // @include desk-tablet-para-comment;
+      // width: 70vw;
+      //   }
+    }
+  }
+  .quote {
+    margin: 0 11.25rem;
+    text-align: center;
+    padding: 3.75rem 2.8125rem;
+    &__text {
+      @include desk-tablet-header-smaller;
+    }
+  }
+}

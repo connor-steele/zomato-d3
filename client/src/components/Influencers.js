@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
 import InfluencerLogo from "../assets/icons/Influencer-Profile-Icon.svg";
 import MapPlaceholder from "../assets/icons/Map-Placeholder.svg";
 
@@ -11,13 +13,15 @@ export default class Influencers extends Component {
         <div className="influencers__block">
           <div className="influencers__block--right">
             <div className="influencers__influencers">
-              <h3 className="influencers__block--text">Influencers </h3>
+              <h3 className="influencers__block--text">Influencers</h3>
               <div className="influencers__block--desktop">
-                <img
-                  src={InfluencerLogo}
-                  alt="influencer"
-                  className="influencer__photo"
-                />
+                <Link to="/missthang">
+                  <img
+                    src={InfluencerLogo}
+                    alt="influencer"
+                    className="influencer__photo"
+                  />
+                </Link>
                 <img
                   src={InfluencerLogo}
                   alt="influencer"

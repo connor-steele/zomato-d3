@@ -27,7 +27,7 @@ function callName(req, res) {
   // E.g : http://localhost:3000/name?firstname=Mike&lastname=Will
   // so, first name = Mike and last name = Will
   var process = spawn("python", [
-    "./python/hello.py",
+    "./hello.py",
     req.query.firstname,
     req.query.lastname
   ]);

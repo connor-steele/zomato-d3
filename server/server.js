@@ -3,6 +3,9 @@
 var express = require("express");
 var app = express();
 
+const galleryRoute = require("./routes/api/gallery");
+app.use("/api/gallery", galleryRoute);
+
 // Creates a server which runs on port 3000 and
 // can be accessed through localhost:3000
 app.listen(5000, function() {

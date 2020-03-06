@@ -1,0 +1,44 @@
+.header {
+  padding: 10px 16px 0;
+  //   background-color: $hover;
+  &__home-link {
+    text-decoration: none;
+    &--logo {
+      margin-bottom: 150px;
+      //   @include mobile-header;
+    }
+  }
+  &__name {
+    @include mobile-header;
+    &--container {
+      @include flex-row-nowrap;
+      justify-content: space-between;
+      .subheader {
+        @include mobile-subheader;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@include medium {
+  .header {
+    margin: 0 24px;
+    &__home-link {
+      text-decoration: none;
+      @include desk-tablet-header;
+    }
+    &__name {
+      @include desk-tablet-header;
+      .subheader {
+        @include desk-tablet-subheader;
+      }
+    }
+  }
+}
+
+@include huge {
+  .header {
+    margin: 0 180px;
+  }
+}

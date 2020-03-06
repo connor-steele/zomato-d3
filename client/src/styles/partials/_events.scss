@@ -1,0 +1,96 @@
+.events {
+  margin: 24px 16px 0;
+  &__title {
+    @include mobile-header;
+  }
+  &__container {
+    &--flex {
+      padding: 0 16px;
+      margin-bottom: 10px;
+      border: 1px solid $black;
+      @include flex-row-nowrap;
+      justify-content: space-between;
+      .left {
+        &__title {
+          margin: 5px 0;
+          @include mobile-subheader;
+        }
+        &__description {
+          margin-bottom: 5px;
+          @include mobile-labels;
+          font-family: AvenirRegular;
+        }
+        &__button {
+          margin-bottom: 5px;
+          //   background-color: $hover;
+          border: 1px solid $hover;
+          //   border-radius: 4px;
+          &--text {
+            padding: 10px 50px;
+            @include mobile-labels;
+          }
+        }
+      }
+      .right {
+        &__calendar {
+          //   background-color: $hover;
+          padding: 30px 10px;
+        }
+      }
+    }
+  }
+}
+
+@include medium {
+  .events {
+    margin: 48px 24px 0;
+    &__title {
+      @include desk-tablet-header;
+    }
+    &__container {
+      @include flex-row-nowrap;
+      justify-content: space-between;
+      &--flex {
+        width: 100%;
+        .left {
+          &__title {
+            @include desk-tablet-subheader;
+          }
+          &__description {
+            @include desk-tablet-labels;
+            font-family: AvenirRegular;
+          }
+          &__button {
+            margin-bottom: 10px;
+            &--text {
+              @include desk-tablet-labels;
+            }
+          }
+        }
+      }
+      .margin-right {
+        margin-right: 10px;
+      }
+      .margin-left {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@include huge {
+  .events {
+    margin: 50px 180px 0;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__container {
+      &--flex {
+        height: 10vw;
+        .left {
+          align-self: center;
+        }
+      }
+    }
+  }
+}

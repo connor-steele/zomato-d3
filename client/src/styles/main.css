@@ -88,6 +88,135 @@
   }
 }
 
+.events {
+  margin: 24px 16px 0;
+}
+
+.events__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: AvenirBold;
+}
+
+.events__container--flex {
+  padding: 0 16px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.events__container--flex .left__title {
+  margin: 5px 0;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-family: AvenirDemi;
+}
+
+.events__container--flex .left__description {
+  margin-bottom: 5px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-family: AvenirDemi;
+  font-family: AvenirRegular;
+}
+
+.events__container--flex .left__button {
+  margin-bottom: 5px;
+  border: 1px solid #002f5f;
+}
+
+.events__container--flex .left__button--text {
+  padding: 10px 50px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-family: AvenirDemi;
+}
+
+.events__container--flex .right__calendar {
+  padding: 30px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .events {
+    margin: 48px 24px 0;
+  }
+  .events__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-family: AvenirBold;
+  }
+  .events__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .events__container--flex {
+    width: 100%;
+  }
+  .events__container--flex .left__title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: AvenirDemi;
+  }
+  .events__container--flex .left__description {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-family: AvenirDemi;
+    font-family: AvenirRegular;
+  }
+  .events__container--flex .left__button {
+    margin-bottom: 10px;
+  }
+  .events__container--flex .left__button--text {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-family: AvenirDemi;
+  }
+  .events__container .margin-right {
+    margin-right: 10px;
+  }
+  .events__container .margin-left {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .events {
+    margin: 50px 180px 0;
+  }
+  .events__title {
+    margin-bottom: 30px;
+  }
+  .events__container--flex {
+    height: 10vw;
+  }
+  .events__container--flex .left {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 *,
 html,
 body {

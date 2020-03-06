@@ -33,7 +33,7 @@ export default class Influencers extends Component {
 
             {/* MENU BUTTON BLOCK */}
             <div className="menu__block--desktop">
-              <button className="menu__button">MENU</button>
+              <button className="menu__button">SEE MENU</button>
             </div>
             {/* MENU BUTTON BLOCK */}
           </div>

@@ -10,8 +10,7 @@
 .offer {
   @include flex-row-wrap;
   height: 160px;
-  //   margin-right: 20px;
-  //   margin-bottom: 40px;
+
   width: 45vw;
   border: 1px solid;
   margin-bottom: 20px;
@@ -27,6 +26,9 @@
   }
 
   &__price {
+    &--text {
+      color: $green;
+    }
   }
   &__body {
     @include flex-row-wrap;

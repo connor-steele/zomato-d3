@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-
 import ingestLogo from "../assets/logos/ingest-logo.svg";
 import profPic from "../assets/icons/missthang.png";
 import greenStar from "../assets/icons/star-active.svg";
 import grayStar from "../assets/icons/star-inactive.svg";
-
 export default class MissThang extends Component {
   render() {
     return (

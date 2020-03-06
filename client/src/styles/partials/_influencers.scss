@@ -1,0 +1,129 @@
+.influencers {
+  &__container {
+    @include flex-row-wrap;
+    width: 100%;
+    padding: 0px 16px;
+  }
+
+  &__block {
+    @include flex-row-nowrap;
+    justify-content: space-between;
+    &--desktop {
+      display: none;
+    }
+    &--left {
+      @include flex-row-wrap;
+      width: 40vw;
+    }
+    &--right {
+      @include flex-row-nowrap;
+      width: 30vw;
+    }
+  }
+}
+.influencer__photo {
+  padding-right: 10px;
+}
+.location {
+  &__block {
+    @include flex-row-nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 10px;
+    &--left {
+      //   width: 51px;
+      width: 40vw;
+    }
+    // padding: 0px 16px;
+  }
+}
+.menu {
+  &__block {
+    width: 100%;
+    // height: 12.75px;
+    &--mobile {
+      display: flex;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+  &__button {
+    width: 100%;
+    height: 20px;
+  }
+}
+@include medium {
+  .influencers {
+    &__container {
+      margin: 0px 24px;
+      padding: 10px 16px 0;
+      width: unset;
+      justify-content: space-between;
+    }
+    &__influencers {
+      @include flex-row-nowrap;
+      justify-content: center;
+      align-self: center;
+    }
+    &__block {
+      @include flex-row-nowrap;
+      &--desktop {
+        width: 60vw;
+        display: flex;
+        padding-left: 20px;
+      }
+      &--text {
+        justify-content: center;
+        // width: 30vw;
+      }
+      &--left {
+        @include flex-row-nowrap;
+        display: none;
+      }
+      &--right {
+        @include flex-row-wrap;
+        // order: 1;
+        width: 40vw;
+      }
+    }
+    &__form {
+      width: 100%;
+    }
+  }
+  .menu {
+    &__block {
+      justify-content: baseline;
+
+      &__left {
+      }
+      // height: 12.75px;
+      &--mobile {
+        display: none;
+      }
+      &--desktop {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        width: 100vw;
+        order: 2;
+      }
+    }
+  }
+  .location {
+    &__block {
+      width: 40%;
+    }
+  }
+}
+
+@include huge {
+  .influencers {
+    &__container {
+      @include flex-row-wrap;
+      width: 100%;
+      padding: 0px 180px;
+    }
+  }
+}

@@ -1,20 +1,45 @@
+.test {
+  color: black;
+  vertical-align: bottom;
+  padding-top: 58vh;
+}
+.subheader {
+  font-size: 1.5rem;
+}
 .header {
-  padding: 10px 16px 0;
-  //   background-color: $hover;
-  &__home-link {
-    text-decoration: none;
-    &--logo {
-      margin-bottom: 150px;
-      //   @include mobile-header;
-    }
-  }
+  @include flex-row-wrap;
+
+  background-image: url("../assets/images/omma-hero-m.jpg");
+  background-size: cover;
+  background-position: center;
+  vertical-align: baseline;
+  font-size: 2.5rem;
+  // display: flex;
+  // position: relative;
+  bottom: 0px;
+  height: 65vh;
+
+  // background-image: url('https://unsplash.it/1500?random')
+
   &__name {
+    padding-top: 48vh;
+    width: 100%;
+    color: white;
+    padding-left: 20px;
+    // align-items: baseline;
+    // justify-content: baseline;
     @include mobile-header;
+    font-size: 2.5rem;
     &--container {
+      padding: 10px 20px;
+      color: white;
       @include flex-row-nowrap;
+      width: 100%;
       justify-content: space-between;
+      // justify-content: space-between;
       .subheader {
         @include mobile-subheader;
+        font-size: 24px;
         margin-bottom: 10px;
       }
     }
@@ -23,22 +48,30 @@
 
 @include medium {
   .header {
-    margin: 0 24px;
+    height: 70vh;
+    // margin: 0 24px;
+    background-image: url("../assets/images/omma-hero.jpg");
     &__home-link {
       text-decoration: none;
       @include desk-tablet-header;
     }
     &__name {
       @include desk-tablet-header;
+      padding-top: 40vh;
       .subheader {
         @include desk-tablet-subheader;
       }
     }
   }
+  .header__name--container .subheader {
+    margin-bottom: 30px;
+  }
 }
 
 @include huge {
   .header {
-    margin: 0 180px;
+    // margin: 0 180px;
+    margin-bottom: 50px;
+    height: 70vh;
   }
 }

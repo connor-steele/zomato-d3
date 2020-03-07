@@ -3,6 +3,7 @@ import Header from "./Header";
 import Events from "./Events";
 import Offers from "./Offers";
 import Influencers from "./Influencers";
+import Footer from "./Footer";
 export default class Home extends Component {
   render() {
     return (
@@ -11,6 +12,7 @@ export default class Home extends Component {
         <Influencers />
         <Events />
         <Offers />
+        <Footer />
       </div>
     );
   }

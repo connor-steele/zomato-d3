@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import InfluencerLogo from "../assets/icons/Influencer-Profile-Icon.svg";
-import MapPlaceholder from "../assets/icons/Map-Placeholder.svg";
+import InfluencerLogoThang from "../assetsicons/missthang.png";
+import MapPlaceholder from "../assets/icons/map.jpg";
 
 export default class Influencers extends Component {
   render() {
@@ -17,7 +18,7 @@ export default class Influencers extends Component {
               <div className="influencers__block--desktop">
                 <Link to="/missthang">
                   <img
-                    src={InfluencerLogo}
+                    src={InfluencerLogoThang}
                     alt="influencer"
                     className="influencer__photo"
                   />

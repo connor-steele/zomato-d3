@@ -7,6 +7,7 @@
     width: 100%;
   }
 }
+
 .offer {
   @include flex-row-wrap;
   height: 160px;
@@ -43,7 +44,7 @@
 }
 @include medium {
   .offer {
-    width: 20vw;
+    width: 35vw;
   }
 }
 @include huge {

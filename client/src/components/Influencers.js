@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import InfluencerLogo from "../assets/icons/Influencer-Profile-Icon.svg";
-import InfluencerLogoThang from "../assetsicons/missthang.png";
+import InfluencerLogoThang from "../assets/icons/missthang.png";
 import MapPlaceholder from "../assets/icons/map.jpg";
 
 export default class Influencers extends Component {

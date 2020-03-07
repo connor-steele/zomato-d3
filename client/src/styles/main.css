@@ -53,6 +53,16 @@ button:hover {
   font-size: 1.5rem;
 }
 
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.offers__header {
+  padding-bottom: 20px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,7 +121,7 @@ button:hover {
 
 @media only screen and (min-width: 768px) {
   .header {
-    height: 70vh;
+    height: 55vh;
     background-image: url("../assets/images/omma-hero.jpg");
   }
   .header__home-link {
@@ -357,6 +367,7 @@ button:hover {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 30vw;
+  margin-left: 20px;
 }
 
 .influencer__photo {
@@ -515,6 +526,10 @@ button:hover {
 
 @media only screen and (min-width: 1440px) {
   .menu__button {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 80%;
     height: 40px;
   }
   .influencers__container {
@@ -534,6 +549,15 @@ button:hover {
 
 .location__block {
   padding-bottom: 10px;
+}
+
+.test {
+  max-height: 200px;
+  padding-left: 20px;
+}
+
+.influencer__photo {
+  max-height: 30px;
 }
 
 .prof-header {
@@ -925,7 +949,7 @@ button:hover {
 
 @media only screen and (min-width: 768px) {
   .offer {
-    width: 20vw;
+    width: 35vw;
   }
 }
 

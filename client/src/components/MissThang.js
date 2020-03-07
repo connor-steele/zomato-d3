@@ -5,6 +5,9 @@ import ingestLogo from "../assets/logos/ingest-logo.svg";
 import profPic from "../assets/icons/missthang.png";
 import greenStar from "../assets/icons/star-active.svg";
 import grayStar from "../assets/icons/star-inactive.svg";
+import oomaPixM from "../assets/images/omma-herocard.jpg";
+import verified from "../assets/icons/flag-trust.svg";
+import reallyVerified from "../assets/icons/flag-high-trust.svg";
 export default class MissThang extends Component {
   render() {
     return (
@@ -56,43 +59,74 @@ export default class MissThang extends Component {
           <h5 className="heading__txt">Places I love</h5>
           <div className="holder">
             <card className="holder__card">
-              <img src="header" alt="card-img" className="holder__card--img" />
+              <img src={reallyVerified} alt="verified" className="absolute" />
+
+              <img
+                src={oomaPixM}
+                alt="card-img"
+                className="holder__card--img"
+              />
               <h3 className="holder__card--subheader">Ooma</h3>
-              <p className="holder__card--text">Cuisine Type</p>
-              <p className="holder__card--text">Location</p>
-              <h3 className="holder__card--subheader">Trust Value</h3>
+              <p className="holder__card--text">Japanese, Sushi</p>
+              <p className="holder__card--text">Mandaluyong City</p>
               <footer className="holder__card--footer">
-                <h5 className="subheader">VISIT</h5>
+                <button className="button">
+                  <h5 className="subheader">VISIT</h5>
+                </button>
               </footer>
             </card>
             <card className="holder__card">
-              <img src="header" alt="card-img" className="holder__card--img" />
-              <h3 className="holder__card--subheader">Restaurant Two</h3>
-              <p className="holder__card--text">Cuisine Type</p>
-              <p className="holder__card--text">Location</p>
-              <h3 className="holder__card--subheader">Trust Value</h3>
+              <img src={reallyVerified} alt="verified" className="absolute" />
+
+              <img
+                src={oomaPixM}
+                alt="card-img"
+                className="holder__card--img"
+              />
+              <h3 className="holder__card--subheader">Izakaya Kikufuji</h3>
+              <p className="holder__card--text">Japanese</p>
+              <p className="holder__card--text">Makati City</p>
               <footer className="holder__card--footer">
-                <h5 className="subheader">VISIT</h5>
+                <button className="button">
+                  <h5 className="subheader">VISIT</h5>
+                </button>
               </footer>
             </card>
             <card className="holder__card">
-              <img src="header" alt="card-img" className="holder__card--img" />
-              <h3 className="holder__card--subheader">Restaurant Three</h3>
-              <p className="holder__card--text">Cuisine Type</p>
-              <p className="holder__card--text">Location</p>
-              <h3 className="holder__card--subheader">Trust Value</h3>
+              <img src={verified} alt="verified" className="absolute" />
+
+              <img
+                src={oomaPixM}
+                alt="card-img"
+                className="holder__card--img"
+              />
+              <h3 className="holder__card--subheader">Le Petit Souffle</h3>
+              <p className="holder__card--text">French, Japanese, Desserts</p>
+              <p className="holder__card--text">Makati City</p>
               <footer className="holder__card--footer">
-                <h5 className="subheader">VISIT</h5>
+                <button className="button">
+                  <h5 className="subheader">VISIT</h5>
+                </button>
               </footer>
             </card>
             <card className="holder__card">
-              <img src="header" alt="card-img" className="holder__card--img" />
-              <h3 className="holder__card--subheader">Restaurant Four</h3>
-              <p className="holder__card--text">Cuisine Type</p>
-              <p className="holder__card--text">Location</p>
-              <h3 className="holder__card--subheader">Trust Value</h3>
+              <img src={verified} alt="verified" className="absolute" />
+              <img
+                src={oomaPixM}
+                alt="card-img"
+                className="holder__card--img"
+              />
+              <h3 className="holder__card--subheader">
+                Heat - Edsa Shangri-La
+              </h3>
+              <p className="holder__card--text">
+                Seafood, Asian, Filipino, Indian
+              </p>
+              <p className="holder__card--text">Mandaluyong City</p>
               <footer className="holder__card--footer">
-                <h5 className="subheader">VISIT</h5>
+                <button className="button">
+                  <h5 className="subheader">VISIT</h5>
+                </button>
               </footer>
             </card>
           </div>

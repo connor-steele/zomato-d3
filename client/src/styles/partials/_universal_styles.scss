@@ -14,4 +14,9 @@ button {
   font-size: 0.75rem;
   line-height: 1.25rem;
   font-family: AvenirDemi;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+    background-color: #4e7a0e;
+  }
 }

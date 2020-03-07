@@ -1,6 +1,6 @@
 # zomato-d3
 
-This is a static prototype we built in a day during a hackathon. It is a mostly front end site built with a node and express backend with a react/SASS front end.
+This is a static prototype we built in a day during a hackathon. It is a mostly front end site built with a node and express backend with and a react/SASS front end.
 
 To install:
 

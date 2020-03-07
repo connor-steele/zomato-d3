@@ -35,6 +35,12 @@ button {
   font-size: 0.75rem;
   line-height: 1.25rem;
   font-family: AvenirDemi;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #4e7a0e;
 }
 
 .test {
@@ -671,16 +677,64 @@ button {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .heading .holder__card {
-  margin: 0.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin: 0.3125rem 0.3125rem 1.875rem;
   border: 0.0625rem solid #353535;
-  width: 7.5rem;
-  height: 18.75rem;
+  width: 8.125rem;
+}
+
+.heading .holder__card .absolute {
+  position: absolute;
+  right: 0.625rem;
+}
+
+.heading .holder__card--img {
+  height: 6.25rem;
+  width: 8.125rem;
+  background-size: contain;
+  background-position: center;
+}
+
+.heading .holder__card--subheader {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-family: AvenirDemi;
+  margin: 5px;
+}
+
+.heading .holder__card--text {
+  margin: 5px;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-family: AvenirRegular;
+}
+
+.heading .holder__card--footer .button {
+  margin: 0;
+}
+
+.heading .holder__card--footer .button .subheader {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-family: AvenirDemi;
 }
 
 @media only screen and (min-width: 768px) {

@@ -75,12 +75,42 @@
   }
   .holder {
     @include flex-row-wrap;
-    justify-content: space-between;
+    justify-content: center;
+    // align-items: center;
     &__card {
-      margin: 0.3125rem;
+      @include flex-column-nowrap;
+      justify-content: space-between;
+      position: relative;
+      margin: 0.3125rem 0.3125rem 1.875rem;
       border: 0.0625rem solid $grey;
-      width: 7.5rem;
-      height: 18.75rem;
+      width: 8.125rem;
+      //   height: 18.75rem;
+      .absolute {
+        position: absolute;
+        right: 0.625rem;
+      }
+      &--img {
+        height: 6.25rem;
+        width: 8.125rem;
+        background-size: contain;
+        background-position: center;
+      }
+      &--subheader {
+        @include mobile-subheader;
+        margin: 5px;
+      }
+      &--text {
+        margin: 5px;
+        @include mobile-paragraph;
+      }
+      &--footer {
+        .button {
+          margin: 0;
+          .subheader {
+            @include mobile-subheader;
+          }
+        }
+      }
     }
   }
 }
